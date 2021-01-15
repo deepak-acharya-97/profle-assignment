@@ -66,7 +66,8 @@
                                 $("<th>", {"scope": "col", "html": "Contact"}),
                                     $("<th>", {"scope": "col", "html": "Address"}),
                                         $("<th>", {"scope": "col", "html": "Category"}),
-                                            $("<th>", {"scope": "col", "html": "Description"})
+                                            $("<th>", {"scope": "col", "html": "Description"}),
+                                                $("<th>", {"scope": "col", "html": "Image"})
                     )
                 );
                 let tBody = $("<tbody>");
@@ -80,7 +81,8 @@
                                 $("<td>", {"html": element.contact}),
                                     $("<td>", {"html": element.address}),
                                         $("<td>", {"html": element.category}),
-                                            $("<td>", {"html": element.description})
+                                            $("<td>", {"html": element.description}),
+                                                $("<td>", {"html": "<img height=30 width=30 src='"+element.image+"'>"})
                     );
                     tBody.append(tBodyTr);
                 }
